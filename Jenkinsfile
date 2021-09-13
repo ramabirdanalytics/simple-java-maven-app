@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Git') {
       steps {
-        sh 'git clone  https://bitbucket.org/Ram75/birdsec/src/Bird4.0/'
+        sh 'git clone https://bitbucket.org/Ram75/bird/src/Bird4.0/'
         sh 'cd /var/jenkins_home/workspace/Bird4.0'
       }
     }
