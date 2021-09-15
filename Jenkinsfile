@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('Dependency Check') {
       steps {
         dependencyCheck(odcInstallation: 'default')
         dependencyCheckPublisher()
