@@ -9,7 +9,7 @@ pipeline {
 
     stage('Dependency Check') {
       steps {
-        dependencyCheck(odcInstallation: 'Default', additionalArguments: '--scan "/opt/" --format HTML')
+        dependencyCheck(odcInstallation: 'Default', additionalArguments: '--scan "/opt/" --out "/opt/dependency-check-report.xml"')
         dependencyCheckPublisher()
       }
     }
